@@ -1,7 +1,31 @@
-import '../styles/globals.css'
+import Head from 'next/head'
+import '../styles/globals.sass'
+
+import Layout from './components/Layout'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <title>Lance Ellis</title>
+        <meta name="description" content="
+          Lance is a web designer and developer based in Austin, Texas. 
+          He specializes in creating beautiful, minimalist websites and applications. 
+          His interests span more than web development taking a general software development internship at Amazon at Los Angeles 
+          and working with mutiple starts varying from automation, robotics, and fintech "
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#fff" />
+        <link rel="icon" href="/icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  )
 }
 
 export default MyApp

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 279 279">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+      }
+
+      .cls-3 {
+        fill: url(#New_Pattern);
+      }
+    </style>
+    <pattern id="New_Pattern" data-name="New Pattern" width="35" height="35" patternUnits="userSpaceOnUse"
+      viewBox="0 0 35 35">
+      <rect class="cls-1" width="35" height="35" />
+      <path class="cls-2"
+        d="M30,15.73v3.49a.76.76,0,0,1-.77.77H20.75a.77.77,0,0,0-.76.77v8.47a.77.77,0,0,1-.77.77h-3.5a.77.77,0,0,1-.77-.77V20.76a.77.77,0,0,0-.77-.77H5.77A.76.76,0,0,1,5,19.22V15.73A.76.76,0,0,1,5.77,15h8.41a.77.77,0,0,0,.77-.77V5.77A.77.77,0,0,1,15.72,5h3.5a.77.77,0,0,1,.77.77v8.42a.77.77,0,0,0,.76.77h8.48A.76.76,0,0,1,30,15.73Z" />
+    </pattern>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect class="cls-3" width="279" height="279" />
+    </g>
+  </g>
+</svg>
