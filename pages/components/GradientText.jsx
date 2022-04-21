@@ -5,11 +5,11 @@ const GradientText = ({children, gradient}) => {
       {`
         div :global(*) {
           color: transparent;
-          background: linear-gradient(45deg, rgb(${gradient[0][0]}, ${gradient[0][1]}, ${gradient[0][2]}) 20%, rgb(${gradient[1][0]}, ${gradient[1][1]}, ${gradient[1][2]}) 45%, rgb(${gradient[2][0]}, ${gradient[2][1]}, ${gradient[2][2]}) 90%);
+          background: linear-gradient(45deg, rgb(${gradient?.at(0)?.at(0)}, ${gradient?.at(0)?.at(1)}, ${gradient?.at(0)?.at(2)}) 20%, rgb(${gradient?.at(1)?.at(0)}, ${gradient?.at(1)?.at(1)}, ${gradient?.at(1)?.at(2)}) 45%, rgb(${gradient?.at(2)?.at(0)}, ${gradient?.at(2)?.at(1)}, ${gradient?.at(2)?.at(2)}) 90%);
           background-clip: text;
         }
       `}
-    </style>
+      </style>
     <div>
       {children}
     </div>

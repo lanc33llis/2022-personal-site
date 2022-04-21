@@ -46,11 +46,13 @@ export default function Index() {
           <h1>
             Hello,
           </h1>
+          { gradColors &&
           <GradientText gradient={gradColors}>
             <h1>
               I&apos;m Lance
             </h1>
           </GradientText>
+          }
           <h2>
             Software and Web Developer
           </h2>
