@@ -58,3 +58,39 @@
       height: 40vh
       background: white
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3em))
+
+.timeline
+  padding: 0 8em
+  h2, h3, h4
+    margin: 0
+  .year 
+    border-top: 1px solid #cccccc
+    border-right: 1px solid #cccccc
+    border-top-right-radius: 25px
+    margin-bottom: 25px
+    h2
+      font-size: 4.5rem
+      position: relative
+      margin: 0
+      top: -.65em
+      background: #1d1d1d
+      width: fit-content
+    .coords
+      display: flex
+      & > div
+        display: flex
+        flex-direction: column
+        h3
+          color: #cccccc
+          font-size: 1.5rem
+          letter-spacing: .2em
+          margin-bottom: .35em
+          font-weight: 400
+        h4
+          margin: .35em 0
+          color: #959595
+          font-size: 1.2rem
+          font-weight: bold
+          font-weight: 400
+          letter-spacing: .1em
+        margin-right: 3em

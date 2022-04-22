@@ -35,9 +35,9 @@ const Header = () => {
               Home
             </a>
           </Link>
-          <Link href="/about" passHref>
-            <a className={router.pathname === "/about" && styles.selected || ""}>
-              About
+          <Link href="/blog" passHref>
+            <a className={router.pathname === "/blog" && styles.selected || ""}>
+              Blog
             </a>
           </Link>
           <Link href="/projects" passHref>

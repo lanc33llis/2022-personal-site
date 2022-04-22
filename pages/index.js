@@ -40,7 +40,7 @@ export default function Index() {
   }, [tick, totalTicks])
 
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.hero}>
         <div className={styles.left}>
           <h1>
@@ -57,7 +57,7 @@ export default function Index() {
             Software and Web Developer
           </h2>
           <h3>
-            Based in Austin, Texas with a passion for creating beautiful, minimalistic websites and applications. 
+            Astronomy major at the University of Texas at Austin with a passion for simple and elegant web design.
           </h3>
         </div>
         <div className={styles.right}>
@@ -68,8 +68,57 @@ export default function Index() {
           <div className={styles["hero-image-bg"]}/>
         </div>
       </div>
-      <div className={styles.content}>
+      <div className={styles.timeline}>
+        <div className={styles.year}>
+          <h2>
+            2022
+          </h2>
+          <div className={styles.coords}>
+            <div>
+              <h3>
+                Location
+              </h3>
+              <h4>
+                AUSTIN, TX
+              </h4>
+              <h4>
+                30.2849° N
+              </h4>
+              <h4>
+                97.7341° W
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Elevation
+              </h3>
+              <h4>
+                522ft
+              </h4>
+              <h4>
+                159m
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Company
+              </h3>
+              <h4>
+                Amazon (Summer)
+              </h4>
+              <h4>
+                SDE Intern
+              </h4>
+              <h4>
+                Los Angeles, CA
+              </h4>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 
 import { useRouter } from 'next/router'
 
+import { Scrollbar } from 'smooth-scrollbar-react'
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
@@ -31,14 +33,14 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <Header />
-      <AnimatePresence
-            exitBeforeEnter
-            onExitComplete={() => window.scrollTo(0, 0)}
-            >
-        <Layout key={router.route}>
-          <Component {...pageProps}/>
-        </Layout>
-      </AnimatePresence>
+        <AnimatePresence
+          exitBeforeEnter
+          onExitComplete={() => window.scrollTo(0, 0)}
+          >
+          <Layout key={router.route}>
+            <Component {...pageProps}/>
+          </Layout>
+        </AnimatePresence>
       <Footer />
     </>
   )
