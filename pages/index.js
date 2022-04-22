@@ -6,6 +6,8 @@ import GradientText from './components/GradientText'
 
 import Image from 'next/image'
 
+import Layout from './components/Layout'
+
 export default function Index() {
   const [tick, setTick] = useState(1)
   const [gradColors, setGradColors] = useState([[39, 49, 182], [112, 224, 162], [182, 49, 39]])
@@ -40,7 +42,7 @@ export default function Index() {
   }, [tick, totalTicks])
 
   return (
-    <>
+    <Layout>
       <div className={styles.hero}>
         <div className={styles.left}>
           <h1>
@@ -115,10 +117,10 @@ export default function Index() {
             </div>
           </div>
           <div>
-            
+
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }

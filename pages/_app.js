@@ -35,9 +35,7 @@ function MyApp({ Component, pageProps }) {
           exitBeforeEnter
           onExitComplete={() => window.scrollTo(0, 0)}
           >
-          <Layout key={router.route}>
-            <Component {...pageProps} key={router.route}/>
-          </Layout>
+          <Component {...pageProps} key={router.route}/>
         </AnimatePresence>
       <Footer />
     </>
