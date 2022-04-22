@@ -10,8 +10,6 @@ import Footer from './components/Footer'
 
 import { useRouter } from 'next/router'
 
-import { Scrollbar } from 'smooth-scrollbar-react'
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
