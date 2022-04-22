@@ -1,15 +1,23 @@
-import Header from "./Header"
-import Footer from "./Footer"
+import { motion } from "framer-motion"
 
-// do transition stuff
+const variants = {
+  hidden: { opacity: 0, x: 0, y: -200 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -200 },
+}
 
 const Layout = ({children}) => {
   return (
-    <main id="app">
-      <Header />
+    <motion.main 
+      variants={variants}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      transition={{type: "linear"}}
+      id="app"
+    >
       {children}
-      <Footer />
-    </main>
+    </motion.main>
   )
 }
 

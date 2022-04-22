@@ -4,6 +4,7 @@
   align-items: center
   height: 100vh
   width: 100%
+  z-index: 0
 
   .left, .right
     width: 50%
@@ -34,10 +35,26 @@
 
   .right
     padding-right: 8em
+    span
+      text-align: center
+      padding: .5em 0
+      color: #cccccc
+
     .hero-image
       align-self: center
       background-image: url("/me.jpg")
       width: 30vw
       height: 40vh
+      z-index: 1
       background-size: cover
+      background-position: 0 -35px
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3em))
+    .hero-image-bg
+      position: absolute
+      z-index: 0
+      right: calc(15% - 25px)
+      top: calc(40% - 25px)
+      width: 30vw
+      height: 40vh
+      background: white
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3em))

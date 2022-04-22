@@ -61,7 +61,11 @@ export default function Index() {
           </h3>
         </div>
         <div className={styles.right}>
+          <span>
+            San Francisco, California
+          </span>
           <div className={styles["hero-image"]}/>
+          <div className={styles["hero-image-bg"]}/>
         </div>
       </div>
       <div className={styles.content}>
