@@ -7,7 +7,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -200 },
 }
 
-const Layout = ({children}) => {
+const Layout = ({children, key}) => {
   return (
     <motion.main 
         variants={variants}
