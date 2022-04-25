@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import '../styles/globals.sass'
 
+
 import Layout from './components/Layout'
 
 import { AnimatePresence } from 'framer-motion'
 
+import indexStyle from '../styles/Index.module.sass'
+import headerStyle from '../styles/Header.module.sass'
 import Header from './components/Header'
 import Footer from './components/Footer'
 

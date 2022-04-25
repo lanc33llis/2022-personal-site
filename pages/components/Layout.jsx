@@ -10,10 +10,10 @@ const variants = {
 const Layout = ({children, key}) => {
   return (
     <motion.main 
-        variants={variants}
         initial="hidden"
         animate="enter"
         exit="exit"
+        variants={variants}
         transition={{type: "linear"}}
         id="app"
       >
