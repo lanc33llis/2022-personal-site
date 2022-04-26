@@ -53,7 +53,7 @@ const Header = () => {
         </nav>
         <span style={{paddingTop: "4px"}}>
           <Link href="https://github.com/lanc33llis" passHref>
-            <a>
+            <a className={styles.github}>
               <Image src="/Github.svg" alt="Github" width={32} height={32} />
             </a>
           </Link>

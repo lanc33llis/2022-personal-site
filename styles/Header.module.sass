@@ -18,6 +18,14 @@
     span:first-child
       height: fit-content
       padding: 0 5px
+    @media (max-width: 1100px) 
+        padding: 0 2rem
+    @media (max-width: 600px)
+      span:first-child
+        display: none
+    @media (max-width: 460px)
+      span:last-child
+        display: none
 
 
   nav
@@ -34,6 +42,8 @@
     font-size: 1.1em
     padding: .35em .9em
     transition: all .2s ease-in-out
+    &.github
+      padding: 0
 
     &.selected
       background: #0a0a0a

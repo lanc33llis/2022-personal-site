@@ -45,29 +45,32 @@ export default function Index() {
     <Layout>
       <div className={styles.hero}>
         <div className={styles.left}>
-          <h1>
-            Hello,
-          </h1>
-          { gradColors &&
-          <GradientText gradient={gradColors}>
+          <div>
             <h1>
-              I&apos;m Lance
+              Hello,
             </h1>
-          </GradientText>
-          }
-          <h2>
-            Software and Web Developer
-          </h2>
-          <h3>
-            Astronomy major at the University of Texas at Austin with a passion for simple and elegant web design.
-          </h3>
+            { gradColors &&
+            <GradientText gradient={gradColors}>
+              <h1>
+                I&apos;m Lance
+              </h1>
+            </GradientText>
+            }
+            <h2>
+              Software and Web Developer
+            </h2>
+            <h3>
+              Astronomy major at the University of Texas at Austin with a passion for simple and elegant web design.
+            </h3>
+          </div>
         </div>
         <div className={styles.right}>
-          <span>
-            San Francisco, California
-          </span>
-          <div className={styles["hero-image"]}/>
-          <div className={styles["hero-image-bg"]}/>
+          <div>
+            <p>
+              San Francisco, California
+            </p>
+            <div className={styles["hero-image"]}/>
+          </div>
         </div>
       </div>
       <div className={styles.timeline}>
@@ -81,7 +84,7 @@ export default function Index() {
                 Location
               </h3>
               <h4>
-                AUSTIN, TX
+                Austin, TX
               </h4>
               <h4>
                 30.2849° N
@@ -116,7 +119,10 @@ export default function Index() {
               </h4>
             </div>
           </div>
-          <div>
+          <div className={styles.important}>
+            <h3>
+              Forty Acres Program
+            </h3>
           </div>
         </div>
       </div>
