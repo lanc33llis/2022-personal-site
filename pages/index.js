@@ -119,8 +119,124 @@ export default function Index() {
               </h4>
             </div>
           </div>
-          <div className={styles.important}>
-
+          <div className={styles.startup}>
+            <div>
+              <h3>
+                Startup
+              </h3>
+              <h4>
+                Droneconia
+              </h4>
+              <h4>
+                Drone/Autonomy
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Stage
+              </h3>
+              <h4>
+                MVP
+              </h4>
+              <h4>
+                Military Contract
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Role
+              </h3>
+              <h4>
+                Software Engineer
+              </h4>
+              <h4>
+                Android Development
+              </h4>
+            </div>
+          </div>
+          <div className={styles.startup}>
+            <div>
+              <h3>
+                Startup
+              </h3>
+              <h4>
+                LP Alpha
+              </h4>
+              <h4>
+                Fintech SAAS
+              </h4>
+              <h4>
+                B2B
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Stage
+              </h3>
+              <h4>
+                Product Release and Development
+              </h4>
+              <h4>
+                Several Customers
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Role
+              </h3>
+              <h4>
+                Freelance Software Engineer
+              </h4>
+              <h4>
+                Web Developer
+              </h4>
+              <h4>
+                Tech Advisor
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div className={styles.year}>
+          <h2>
+            2021
+          </h2>
+          <div className={styles.coords}>
+            <div>
+              <h3>
+                Location
+              </h3>
+              <h4>
+                San Antonio, TX
+              </h4>
+              <h4>
+                29.5064° N
+              </h4>
+              <h4>
+                98.5154° W
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Elevation
+              </h3>
+              <h4>
+                761ft
+              </h4>
+              <h4>
+                232m
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Company
+              </h3>
+              <h4>
+                Major League Hacking (Summer)
+              </h4>
+              <h4>
+                Production Engineering Fellow
+              </h4>
+            </div>
           </div>
         </div>
       </div>
