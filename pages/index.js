@@ -120,9 +120,7 @@ export default function Index() {
             </div>
           </div>
           <div className={styles.important}>
-            <h3>
-              Forty Acres Program
-            </h3>
+
           </div>
         </div>
       </div>
