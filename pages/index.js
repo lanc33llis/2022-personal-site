@@ -5,6 +5,7 @@ import lerp from '../util/lerp'
 import GradientText from './components/GradientText'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Layout from './components/Layout'
 
@@ -74,7 +75,7 @@ export default function Index() {
         </div>
       </div>
       <h2 className={styles["section-heading"]}>
-        Timeline
+        Experience
       </h2>
       <div className={styles.timeline}>
         <div className={styles.year}>
@@ -131,7 +132,10 @@ export default function Index() {
                 Droneconia
               </h4>
               <h4>
-                Drone/Autonomy
+                Autonomous Vehicle
+              </h4>
+              <h4>
+                AI Research
               </h4>
             </div>
             <div>
@@ -150,7 +154,7 @@ export default function Index() {
                 Role
               </h3>
               <h4>
-                Software Engineer
+                SDE
               </h4>
               <h4>
                 Android Development
@@ -188,13 +192,10 @@ export default function Index() {
                 Role
               </h3>
               <h4>
-                Freelance Software Engineer
+                Freelance SDE
               </h4>
               <h4>
                 Web Development
-              </h4>
-              <h4>
-                Tech Advising
               </h4>
             </div>
           </div>
@@ -238,6 +239,54 @@ export default function Index() {
               </h4>
               <h4>
                 Production Engineering Fellow
+              </h4>
+            </div>
+          </div>
+          <div className={styles.research}>
+            <div>
+              <h3>
+                Research
+              </h3>
+              <h4>
+                N-Body Simulations
+              </h4>
+              <h4>
+                Photometry
+              </h4>
+              <h4>
+                Prediction
+              </h4>
+            </div>
+            <div>
+              <h3>
+                University
+              </h3>
+              <h4>
+                Trinity University
+              </h4>
+              <h4>
+                Dr. Mark C. Lewis
+              </h4>
+              <h4>
+                Elizabeth Ruetschle
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Paper
+              </h3>
+              <h4>
+                Photometric Rendering of Dust and Free..
+              </h4>
+              <h4>
+                <Link href="https://www.springer.com/series/11769" passHref>
+                  <a>
+                    Transactions on Computational Science...
+                  </a>
+                </Link>
+              </h4>
+              <h4>
+                CSC&apos;21
               </h4>
             </div>
           </div>
