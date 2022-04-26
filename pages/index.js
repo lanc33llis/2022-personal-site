@@ -276,7 +276,7 @@ export default function Index() {
                 Paper
               </h3>
               <h4>
-                Photometric Rendering of Dust and Free..
+                Photometric Rendering of Dust and Free...
               </h4>
               <h4>
                 <Link href="https://www.springer.com/series/11769" passHref>
