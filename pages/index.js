@@ -191,10 +191,10 @@ export default function Index() {
                 Freelance Software Engineer
               </h4>
               <h4>
-                Web Developer
+                Web Development
               </h4>
               <h4>
-                Tech Advisor
+                Tech Advising
               </h4>
             </div>
           </div>
