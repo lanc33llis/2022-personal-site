@@ -73,6 +73,9 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <h2 className={styles["section-heading"]}>
+        Timeline
+      </h2>
       <div className={styles.timeline}>
         <div className={styles.year}>
           <h2>
