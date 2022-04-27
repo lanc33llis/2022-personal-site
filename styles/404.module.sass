@@ -1,0 +1,15 @@
+.container 
+  $bottom-rem: 4rem
+  height: calc(100vh - 48px - 200px - $bottom-rem)
+  @media ( max-width: 800px )
+    height: calc(100vh - 48px - 150px - $bottom-rem)
+  @media (max-height: 650px)
+    height: calc(100vh - 48px - 100px - $bottom-rem)
+
+  padding: 0 2rem $bottom-rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  p
+    text-align: center
