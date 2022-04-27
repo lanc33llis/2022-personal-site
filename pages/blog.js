@@ -3,8 +3,11 @@ import styles from '../styles/Blog.module.sass'
 import Layout from './components/Layout'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
-const Blog = ({ blogs }) => {
+import moment from 'moment'
+
+export default function Blog({ blogs }) {
   return (
     <Layout>
       <div className={styles.container}>
@@ -13,31 +16,39 @@ const Blog = ({ blogs }) => {
             Blog
           </h1>
           <h2>
-            Everyday and Tech Blogs from UT Austin powered by Dev.to
+            Life and tech blogs powered by DEV
           </h2>
         </div>
         <div className={styles.blogs}>
           {blogs.map(blog => (
             <div className={styles.blog} key={blog.id}>
-              <div className={styles.image}>
-                {
-                  blog.image &&
-                  <Image
-                    src={blog.image}
-                    alt={blog.title}
-                    width={300}
-                    height={200}
-                  />
-                }
-              </div>
-              <div className={styles.content}>
-                <h3>
-                  {blog.title}
-                </h3>
-                <p>
-                  {blog.description}
-                </p>
-              </div>
+              <Link href={{pathname: '/blogs/[blog]', query: {blog: blog.slug}}} passHref>
+                <a>
+                  <div className={styles.content}>
+                    <h3>
+                      {blog.title}
+                    </h3>
+                    <h4>
+                      {moment(blog["published_timestamp"]).format('MM/DD/YYYY, h:mm a')}
+                    </h4>
+                    <h4>
+                      {blog.tag_list.map((tag, i, arr) => (
+                        <span key={tag}>
+                          {tag}{i + 1 != arr.length ? ` - ` : ""}
+                        </span>
+                      ))}
+                    </h4>
+                    <p>
+                      {blog.description}
+                    </p>
+                    <Link href={{pathname: '/blogs/[blog]', query: {blog: blog.slug}}} passHref>
+                        <a>
+                          Read More
+                        </a>
+                    </Link>
+                  </div>
+                </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -56,6 +67,3 @@ export async function getStaticProps (ctx) {
     revalidate: 60 * 60 * 8 //8hrs
   }
 }
-
-
-export default Blog
