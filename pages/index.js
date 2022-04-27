@@ -254,7 +254,7 @@ export default function Index() {
                 Photometry
               </h4>
               <h4>
-                Prediction
+                Data Analysis
               </h4>
             </div>
             <div>
