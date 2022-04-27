@@ -1,3 +1,5 @@
+@use "vars"
+
 .hero
   margin-top: 200px
   display: flex
@@ -10,7 +12,8 @@
   @media (max-width: 800px)
     flex-direction: column
     height: auto
-  @media(max-height: 700px)
+    margin-top: 150px
+  @media (max-height: 650px)
     margin-top: 100px
 
   .left, .right
@@ -45,11 +48,11 @@
       text-align: center
 
   h2
-    color: #cccccc
+    color: vars.$h2-color
     margin-top: 1em
 
   h3
-    color: #959595
+    color: vars.$h3-color
     margin-top: .5em
 
   .left
@@ -74,7 +77,7 @@
     p
       text-align: center
       padding: .5em 0
-      color: #cccccc
+      color: #dfdfdf
       width: 100%
       padding: 0
 
@@ -102,8 +105,8 @@
   h2, h3, h4
     margin: 0
   .year 
-    border-top: 1px solid #cccccc
-    border-right: 1px solid #cccccc
+    border-top: 1px solid vars.$h2-color
+    border-right: 1px solid vars.$h2-color
     border-top-right-radius: 25px
     margin-bottom: 25px
     h2
@@ -111,14 +114,14 @@
       position: relative
       margin: 0
       top: -.65em
-      background: #1d1d1d
+      background: vars.$bg-color
       width: fit-content
     .coords, .startup, .research
       display: flex
       margin-bottom: 3em
       padding-bottom: 3em
       &:not(:last-child)
-        border-bottom: 1px solid #cccccc
+        border-bottom: 1px solid vars.$h2-color
       @media (max-width: 700px)
         flex-wrap: wrap
         justify-content: space-between
@@ -130,14 +133,14 @@
         @media (max-width: 700px)
           margin: 1em 0
         h3
-          color: #cccccc
+          color: vars.$h2-color
           font-size: 1.5rem
           letter-spacing: .15em
           margin-bottom: .35em
           font-weight: 400
         h4
           margin: .35em 0
-          color: #959595
+          color: vars.$h4-color
           font-size: 1.2rem
           font-weight: bold
           font-weight: 400
