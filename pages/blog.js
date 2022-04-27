@@ -22,7 +22,7 @@ export default function Blog({ blogs }) {
         <div className={styles.blogs}>
           {blogs.map(blog => (
             <div className={styles.blog} key={blog.id}>
-              <Link href={{pathname: '/blogs/[blog]', query: {blog: blog.slug}}} passHref>
+              <Link href={{pathname: '/blogs/[blog]/', query: {blog: blog.slug}}} passHref>
                 <a>
                   <div className={styles.content}>
                     <h3>
@@ -41,11 +41,9 @@ export default function Blog({ blogs }) {
                     <p>
                       {blog.description}
                     </p>
-                    <Link href={{pathname: '/blogs/[blog]', query: {blog: blog.slug}}} passHref>
-                        <a>
-                          Read More
-                        </a>
-                    </Link>
+                    <p>
+                      Read More
+                    </p>
                   </div>
                 </a>
               </Link>
@@ -60,6 +58,7 @@ export default function Blog({ blogs }) {
 export async function getStaticProps (ctx) {
   const res = await fetch('https://dev.to/api/articles/me', { headers: { 'API_KEY': process.env.DEVTO_API_KEY } })
   const data = await res.json()
+
   return {
     props: {
       blogs: data
