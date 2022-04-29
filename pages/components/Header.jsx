@@ -32,7 +32,6 @@ const Header = () => {
                     <motion.span
                       layoutId="nav-selected"
                       className={styles.active}
-                      style={{top: "24.75px", width: '100%', left: '-.9em'}}
                       animate
                     />
                   }
