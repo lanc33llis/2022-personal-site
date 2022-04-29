@@ -1,5 +1,5 @@
 .container
-  position: sticky
+  position: fixed
   width: 100%
   left: 0
   top: 0
@@ -35,8 +35,6 @@
     border-radius: 100px
     display: flex
     z-index: 2
-
-    transform: none !important
   
   a
     color: white
@@ -47,7 +45,6 @@
     border: 1px solid transparent
     transition: all .2s ease-in-out
     border-radius: 100px
-    position: relative
     &.github
       padding: 0
 
@@ -56,25 +53,15 @@
       // border: 1px solid white
 
     &.link
-      // display: flex
-      // flex-direction: column
+      display: flex
+      flex-direction: column
 
 .active
-  // background: #000000
-  // display: inline-block !important
-  // margin: -28px 0 0 0 !important
-  // padding: 0 .9em !important
-  // height: 28px !important
-  // position: relative
-  $padding-x: .9em
-  $padding-y: .1em
-  position: absolute
-  height: 23.33px !important
-  z-index: -1
   background: #000000
-  width: 100% !important
-  left: -$padding-x
-  top: -$padding-y * 1.5
-  padding: $padding-y $padding-x !important
+  display: inline-block !important
+  margin: -28px 0 0 0 !important
+  padding: 0 .9em !important
+  height: 28px !important
+  z-index: -1
+  position: relative
   border-radius: 100px
-  display: block !important
