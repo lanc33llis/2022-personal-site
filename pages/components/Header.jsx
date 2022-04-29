@@ -31,8 +31,8 @@ const Header = () => {
                     ((Array.isArray(href) && href.includes(`/${router.pathname.split('/')[1]}`)) || (router.pathname === href)) &&
                     <motion.span
                       layoutId="nav-selected"
-                      className={styles.active}
                       animate
+                      className={styles.active}
                     />
                   }
                   {name}
