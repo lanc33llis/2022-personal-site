@@ -6,6 +6,8 @@ import { useRouter } from 'next/router'
 
 import { LayoutGroup, motion } from 'framer-motion'
 
+import { memo } from 'react'
+
 const links = [
   { name: 'Home', href: '/' },
   { name: 'Blog', href: ['/blog', '/blogs'] },
@@ -17,15 +19,15 @@ const Header = () => {
   const router = useRouter()
 
   return (
-    <LayoutGroup>
-      <div className={styles.container}>
+    // <LayoutGroup>
+      <motion.div className={styles.container}>
         <header>
           <span>
             Lance Ellis
           </span>
           <nav>
             {links.map(({ name, href }) => (
-              <Link href={Array.isArray(href) ? href[0] : href} key={name} passHref>
+              <Link href={Array.isArray(href) ? href[0] : href} key={name} passHref scroll={false}>
                 <a className={styles.link}>
                   {
                     ((Array.isArray(href) && href.includes(`/${router.pathname.split('/')[1]}`)) || (router.pathname === href)) &&
@@ -48,9 +50,9 @@ const Header = () => {
             </Link>
           </span>
         </header>
-      </div>
-    </LayoutGroup>
+      </motion.div>
+    // </LayoutGroup>
   )
 }
 
-export default Header
+export default memo(Header)
