@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
         <AnimatePresence
           exitBeforeEnter
           layoutScroll
-          >
+        >
           <Component {...pageProps} key={router.route}/>
         </AnimatePresence>
       <Footer />
