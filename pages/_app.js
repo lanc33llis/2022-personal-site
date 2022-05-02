@@ -35,10 +35,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
         <AnimatePresence
           exitBeforeEnter
-          layoutScroll 
-          onExitComplete={() => {
-            window.scrollTo(0, 0)
-          }}
+          layoutScroll
           >
           <Component {...pageProps} key={router.route}/>
         </AnimatePresence>
