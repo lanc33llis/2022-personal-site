@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 import { useRouter } from 'next/router'
 
-import { LayoutGroup, motion } from 'framer-motion'
+import { LayoutGroup, motion, AnimatePresence } from 'framer-motion'
 
-import { memo } from 'react'
+import { memo, useState, useEffect } from 'react'
 
 const links = [
   { name: 'Home', href: '/' },
@@ -19,11 +19,12 @@ const Header = () => {
   const router = useRouter()
 
   return (
-    <motion.div className={styles.container}>
+    <div className={styles.container}>
       <header>
-        <span>
+        <Image src="/logo1.svg"  width={32} height={32}/>
+        {/* <span>
           Lance Ellis
-        </span>
+        </span> */}
         <nav>
           {links.map(({ name, href }) => (
             <Link href={Array.isArray(href) ? href[0] : href} key={name} passHref scroll={false}>
@@ -32,7 +33,6 @@ const Header = () => {
                   ((Array.isArray(href) && href.includes(`/${router.pathname.split('/')[1]}`)) || (router.pathname === href)) &&
                   <motion.span
                     layoutId="nav-selected"
-                    animate={() => { window.scrollTo(0, 0); return {opacity: 1};}}
                     className={styles.active}
                   />
                 }
@@ -49,7 +49,7 @@ const Header = () => {
           </Link>
         </span>
       </header>
-    </motion.div>
+    </div>
   )
 }
 

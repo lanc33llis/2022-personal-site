@@ -33,12 +33,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#343434" />
       </Head>
       <Header />
-        <AnimatePresence
-          exitBeforeEnter
-          layoutScroll
-        >
-          <Component {...pageProps} key={router.route}/>
-        </AnimatePresence>
+      <AnimatePresence
+        exitBeforeEnter
+        layoutScroll
+      >
+        <Component {...pageProps} key={router.route}/>
+      </AnimatePresence>
       <Footer />
     </>
   )

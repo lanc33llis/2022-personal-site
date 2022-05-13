@@ -26,14 +26,18 @@
       font-size: 2em
       background: vars.$bg-color
       width: fit-content
+      color: vars.$h2-color
       @media (max-width: 600px)
         font-size: 1.5em
     h4
       position: relative
       top: -.65em
       font-size: 1.15em
+      color: vars.$h3-color
       &:first-of-type
     a
       color: white
-    a p:last-of-type
-      text-decoration: underline
+      p
+        color: vars.$h3-color
+      p:last-of-type
+        text-decoration: underline
