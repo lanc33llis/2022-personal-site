@@ -21,10 +21,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <header>
-        <Image src="/logo1.svg"  width={32} height={32}/>
-        {/* <span>
-          Lance Ellis
-        </span> */}
+        <Image src="/logo1.svg"  width={25} height={25}/>
         <nav>
           {links.map(({ name, href }) => (
             <Link href={Array.isArray(href) ? href[0] : href} key={name} passHref scroll={false}>
