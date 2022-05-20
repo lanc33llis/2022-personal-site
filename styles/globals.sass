@@ -6,7 +6,11 @@ html, body
   font-family: 'Inter', 'Open Sans', sans-serif
   background-color: vars.$bg-color
   color: white
+
   overflow-x: hidden
+
+  @media (max-width: 1200px)
+    overflow-x: scroll
 
 #__next
   z-index: 1
