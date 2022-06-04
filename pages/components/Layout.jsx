@@ -14,7 +14,7 @@ const Layout = ({children, key}) => {
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{type: "linear"}}
+        transition={{type: "linear", duration: .75}}
         id="app"
       >
         {children}

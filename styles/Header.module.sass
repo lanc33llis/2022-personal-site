@@ -1,5 +1,5 @@
 .container
-  position: absolute
+  position: fixed
   width: 100%
   left: 0
   top: 0
@@ -20,10 +20,10 @@
       padding: 0 5px
     @media (max-width: 1100px) 
         padding: 0 2rem
-    @media (max-width: 620px)
-      > span:first-of-type
-        display: none !important
-    @media (max-width: 460px)
+    @media (max-width: 645px)
+      h2:first-of-type
+        content: 'LE'
+    @media (max-width: 560px)
       span:last-of-type
         display: none
 
@@ -55,6 +55,9 @@
     &.link
       display: flex
       flex-direction: column
+    @media (max-width: 470px)
+      font-size: .9em
+      margin: .1em .6em
 
 .active
   background: #000000
@@ -68,3 +71,9 @@
   top: 24.75px
   left: -.9em
   border-radius: 100px
+  @media (max-width: 470px)
+    padding: 0 .7em !important
+    height: 26px !important
+    margin: -26px 0 0 0 !important
+    left: -.7em
+    top: 21.75px
