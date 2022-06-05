@@ -28,6 +28,7 @@ const Header = () => {
   const [docWidth, setDocWidth] = useState(0)
 
   useEffect(() => {
+    setDocWidth(document.documentElement.clientWidth)
     window.onresize = () => {
       setDocWidth(document.documentElement.clientWidth)
     }
