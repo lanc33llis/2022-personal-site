@@ -9,8 +9,7 @@ export default function Projects() {
         <div className={styles.title}>
           <h1>Projects</h1>
           <h2>
-            I do a lot of personal projects for fun but also to learn more about technologies. 
-            Here are some of my favorites.
+            Some of my favorite projects from my work experience or personal projects.
           </h2>
         </div>
       </div>

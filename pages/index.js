@@ -123,6 +123,44 @@ export default function Index() {
               </h4>
             </div>
           </div>
+          <div className={styles.internship}>
+            <div>
+              <h3>
+                Internship
+              </h3>
+              <h4>
+                Amazon
+              </h4>
+              <h4>
+                Summer
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Team
+              </h3>
+              <h4>
+                Alexa
+              </h4>
+              <h4>
+                Out of Box Experience
+              </h4>
+            </div>
+            <div>
+              <h3>
+                Role
+              </h3>
+              <h4>
+                SDE Intern
+              </h4>
+              <h4>
+                Fullstack Development
+              </h4>
+              <h4>
+                React, TypeScript, Java, CI/CD
+              </h4>
+            </div>
+          </div>
           <div className={styles.startup}>
             <div>
               <h3>
@@ -146,7 +184,7 @@ export default function Index() {
                 MVP
               </h4>
               <h4>
-                Military Contract
+                Obtained Military Contract
               </h4>
             </div>
             <div>
@@ -154,10 +192,13 @@ export default function Index() {
                 Role
               </h3>
               <h4>
-                SDE
+                Freelance SDE
               </h4>
               <h4>
-                Android Development
+                Fullstack Development
+              </h4>
+              <h4>
+                DevOps, Python, Java, JS
               </h4>
             </div>
           </div>
@@ -184,7 +225,7 @@ export default function Index() {
                 Product Release and Development
               </h4>
               <h4>
-                Several Customers
+                Customer Acquisition & Growth
               </h4>
             </div>
             <div>
@@ -195,8 +236,9 @@ export default function Index() {
                 Freelance SDE
               </h4>
               <h4>
-                Web Development
+                Fullstack Development
               </h4>
+              <h4>Vue, Django, PostgreSQL</h4>
             </div>
           </div>
         </div>
