@@ -32,7 +32,7 @@ const Header = () => {
     window.onresize = () => {
       setDocWidth(document.documentElement.clientWidth)
     }
-  })
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
