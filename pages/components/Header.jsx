@@ -81,12 +81,8 @@ const Header = () => {
                 <a className={styles.link}>
                   {
                     ((Array.isArray(href) && href.includes(`/${router.pathname.split('/')[1]}`)) || (router.pathname === href)) &&
-                    <motion.span
-                      layoutId="nav-selected"
+                    <span
                       className={styles.active}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
                     />
                   }
                   {name}
