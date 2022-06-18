@@ -9,6 +9,11 @@
 
   z-index: 3
 
+  .logo
+    font-family: Jetbrains Monospace
+    font-variant-ligatures: normal
+    margin: 0 5px
+
   header
     display: flex
     justify-content: space-between
@@ -24,6 +29,7 @@
       h2:first-of-type
         content: 'LE'
     @media (max-width: 560px)
+      padding: 0 1rem
       span:last-of-type
         display: none
 
@@ -35,6 +41,7 @@
     border-radius: 100px
     display: flex
     z-index: 2
+    font-family: Jetbrains Monospace
   
   a
     color: white
@@ -55,7 +62,7 @@
     &.link
       display: flex
       flex-direction: column
-    @media (max-width: 470px)
+    @media (max-width: 515px)
       font-size: .9em
       margin: .1em .6em
 
@@ -68,13 +75,13 @@
   height: 28px !important
   z-index: -1
   position: relative
-  top: 24.75px
+  top: 26px
   left: -.9em
   border-radius: 100px
   transition: all .2s ease-in-out
-  @media (max-width: 470px)
+  @media (max-width: 515px)
     padding: 0 .7em !important
     height: 26px !important
     margin: -26px 0 0 0 !important
     left: -.7em
-    top: 21.75px
+    top: 22px

@@ -66,11 +66,11 @@ const Header = () => {
       <div className={styles.container}>
         <header>
           <GradientText gradient={gradColors}>
-            { docWidth > 655 && 
-              <h2>
-                Lance Ellis
+            { docWidth > 750 && 
+              <h2 className={styles.logo}>
+                &lt;/ Lance Ellis
               </h2> ||
-              <h2>
+              <h2 className={styles.logo}>
                 LE
               </h2>
             }

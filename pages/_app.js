@@ -20,13 +20,11 @@ function MyApp({ Component, pageProps }) {
         <title>Lance Ellis</title>
         <meta name="description" content="
           Lance is a web designer and developer based in Austin, Texas. 
-          He specializes in creating beautiful, minimalist websites and applications. 
-          His interests span more than web development taking a general software development internship at Amazon at Los Angeles 
-          and working with mutiple starts varying from automation, robotics, and fintech "
+          He specializes in creating beautiful, minimalist websites and applications."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#fff" />
-        <link rel="icon" href="/icon.svg" />
+        <link rel="icon" href="/logo_3.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
